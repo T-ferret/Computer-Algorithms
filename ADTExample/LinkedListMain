@@ -1,0 +1,31 @@
+from LinkedList import LinkedListLIFO
+
+ll = LinkedListLIFO()
+for i in range(1, 5):
+    ll._add(i)
+ll._add(10)
+print("Print Linked List")
+ll._printlist()
+
+print("Print Linked List after deleting index with 2")
+ll.deleteNode(2)
+ll._printlist()
+print(ll.length)
+
+print("Print Linked List after deleting value with 3")
+ll.deleteNodeByvalue(3)
+ll._printlist()
+print(ll.length)
+
+ll._add(15)
+ll._printlist()
+print(ll.length)
+
+for i in range(ll.length-1, -1, -1):
+    ll.deleteNode(i)
+
+ll._printlist()
+print(ll.length)
+
+# 추상 데이터 연습문제 손으로 풀어보세요
+# 미친넘인가
